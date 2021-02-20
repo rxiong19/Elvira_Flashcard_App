@@ -5,4 +5,28 @@
     android:id="@+id/question1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" />
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@id/question1"
+        android:layout_width="355dp"
+        android:layout_height="78dp"
+        android:text="What is my name? "
+        android:textSize="40dp"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elvira Bearrrr"
+        android:gravity="center"
+        android:layout_below="@id/question1"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="404dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
