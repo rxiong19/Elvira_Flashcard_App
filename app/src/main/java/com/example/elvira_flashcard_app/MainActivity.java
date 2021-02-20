@@ -13,12 +13,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView questionTextView = findViewById(R.id.question1);
-        TextView answerTextView = findViewById(R.id.answer1);
+        TextView questionTextView = findViewById(R.id.question);
+        TextView answerTextView = findViewById(R.id.answer);
 
         questionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 questionTextView.setVisibility(View.INVISIBLE);
                 answerTextView.setVisibility(View.VISIBLE);
             }
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         answerTextView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
                 questionTextView.setVisibility(View.VISIBLE);
                 answerTextView.setVisibility(View.INVISIBLE);
             }
