@@ -19,14 +19,15 @@
 
     <TextView
         android:id="@+id/answer1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Elvira Bearrrr"
-        android:gravity="center"
+        android:layout_width="290dp"
+        android:layout_height="103dp"
         android:layout_below="@id/question1"
+        android:text="Bearrrr"
+        android:textAlignment="center"
+        android:textSize="40dp"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="404dp" />
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="216dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
