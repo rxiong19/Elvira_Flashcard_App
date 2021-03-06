@@ -9,14 +9,15 @@ import android.widget.TextView;
 import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-
+    TextView questionTextView;
+    TextView answerTextView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView questionTextView = findViewById(R.id.question);
-        TextView answerTextView = findViewById(R.id.answer);
+        questionTextView = findViewById(R.id.question);
+        answerTextView = findViewById(R.id.answer);
 
         questionTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == 100 && resultCode == RESULT_OK) {
             String question = data.getExtras().getString("question");
             String answer = data.getExtras().getString("answer");
+            questionTextView.setText(question);
+            answerTextView.setText(answer);
         }
     }
 

@@ -45,6 +45,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="192dp"
         android:layout_marginEnd="-1dp"
+        android:ems="10"
         android:hint="Question goes here!"
         android:inputType="textMultiLine"
         android:textSize="15sp" />
@@ -60,6 +61,7 @@
         android:layout_marginStart="2dp"
         android:layout_marginTop="340dp"
         android:layout_marginEnd="2dp"
+        android:ems="10"
         android:hint="Answer goes here!"
         android:inputType="textMultiLine"
         android:textSize="15sp" />
