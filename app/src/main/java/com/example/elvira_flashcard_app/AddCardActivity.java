@@ -10,8 +10,8 @@ import android.widget.EditText;
 
 
 public class AddCardActivity extends AppCompatActivity {
-    EditText Question = findViewById(R.id.QuestionLine);
-    EditText Answer = findViewById(R.id.AnswerLine);
+    EditText Question;
+    EditText Answer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,8 @@ public class AddCardActivity extends AppCompatActivity {
 
         ImageView cancelButton = findViewById(R.id.cancelQuestion);
         ImageView saveButton = findViewById(R.id.saveQuestion);
+        Question = findViewById(R.id.QuestionLine);
+        Answer = findViewById(R.id.AnswerLine);
 
 
 
@@ -26,6 +28,7 @@ public class AddCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AddCardActivity.this, MainActivity.class);
+                setResult(RESULT_CANCELED, intent);
                 finish();
             }
         });
@@ -33,21 +36,21 @@ public class AddCardActivity extends AppCompatActivity {
         saveButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-//                newQuestion();
-                Intent intent = new Intent(AddCardActivity.this, MainActivity.class);
-                intent.putExtra("New_Question", Question.getText().toString());
-                intent.putExtra("New_Answer", Answer.getText().toString());
-                finish();
+                newQuestion();
+
+
             }
         });
 
     }
-//    public void newQuestion(){
-//        Intent intent = new Intent(AddCardActivity.this, MainActivity.class);
-//        intent.putExtra("New_Question", Question.getText().toString());
-//        intent.putExtra("New_Answer", Answer.getText().toString());
-//        finish();
-//    }
+
+    public void newQuestion(){
+        Intent intent = new Intent(AddCardActivity.this, MainActivity.class);
+        intent.putExtra("question", ((EditText)Question).getText().toString());
+        intent.putExtra("answer", ((EditText)Answer).getText().toString());
+        setResult(RESULT_OK, intent);
+        finish();
+    }
 
 
 
