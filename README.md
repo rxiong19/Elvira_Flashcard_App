@@ -65,7 +65,7 @@ After we add the second question, you can click the "next" and "last" buttons to
 
 
 ## Required
-- [x]User can create a card and still see their created card when the app is relaunched.
+- [x] User can create a card and still see their created card when the app is relaunched.
 - [x] User can create muliple cards and browse through all created cards
 
 ## Optional
