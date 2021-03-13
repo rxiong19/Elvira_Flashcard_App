@@ -1,4 +1,4 @@
-package com.yourpackage.packagenamehere;
+package com.example.elvira_flashcard_app;
 
 
 import androidx.annotation.NonNull;

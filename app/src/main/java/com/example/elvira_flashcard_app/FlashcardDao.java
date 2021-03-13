@@ -1,12 +1,13 @@
-package com.yourpackage.packagenamehere;
 
 
+package com.example.elvira_flashcard_app;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
+
 
 import java.util.List;
 

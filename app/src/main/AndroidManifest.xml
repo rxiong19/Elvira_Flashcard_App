@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Elvira_Flashcard_App">
-        <activity android:name=".AddCardActivity"></activity>
+        <activity android:name=".DeleteActivity"></activity>
+        <activity android:name=".AddCardActivity" />
 
         <uses-library
             android:name="com.google.android.wearable"
