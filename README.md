@@ -61,7 +61,7 @@ This is very simple falshcard app. Now we have a funvtion to view multiple cards
 ### App Walk-though
 After we add the second question, you can click the "next" and "last" buttons to go back and forth. If you keep clicking next, you will see your first card eventually. But if you keep clicking "last" button, you will stop at the first card. You can also delete the card you don't want. If you delete all the card, then you will be transfered to a new page saying you have deleted all the cards and next time you open the app, the default setting for the question and answer will be appeared.
 
-<img src="http://g.recordit.co/PrbiUBSriF.gif" width=200><br>
+<img src="https://recordit.co/PrbiUBSriF" width=200><br>
 
 
 ## Required
