@@ -50,3 +50,26 @@ As you open th eapp, you can click the Question and Answer back and forth. This 
 - [ ] A notification is shown if the card was created successfully
 - [ ] User can also enter multiple choice answers when creating a card
 - [ ] App is further styled and customized!
+
+
+
+## Lab 3
+
+### App Description
+This is very simple falshcard app. Now we have a funvtion to view multiple cards and a unstable deleteCard function.
+
+### App Walk-though
+After we add the second question, you can click the "next" and "last" buttons to go back and forth. If you keep clicking next, you will see your first card eventually. But if you keep clicking "last" button, you will stop at the first card. You can also delete the card you don't want. If you delete all the card, then you will be transfered to a new page saying you have deleted all the cards and next time you open the app, the default setting for the question and answer will be appeared.
+
+<img src="http://g.recordit.co/PrbiUBSriF.gif" width=200><br>
+
+
+## Required
+- [x User can create a card and still see their created card when the app is relaunched.
+- [x User can create muliple cards and browse through all created cards
+
+## Optional
+- [x User can delete a card and no longer see it in their deck anymore
+- [ ] Flashcards are shown in random order instead of the order they were created in
+- [ ] User can edit a card and see the edit saved when they browse through their deck of cards
+- [ ] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
