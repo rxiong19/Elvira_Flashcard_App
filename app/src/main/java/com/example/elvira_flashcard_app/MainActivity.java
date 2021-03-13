@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if ((allFlashcards.size()-2) < 0 ){
                     Intent intent = new Intent(MainActivity.this, DeleteActivity.class);
-                    MainActivity.this.startActivityForResult(intent, 100);
+                    MainActivity.this.startActivityForResult(intent, 200);
                 }
                 flashcardDatabase.deleteCard(((TextView) findViewById(R.id.question)).getText().toString());
                 allFlashcards = flashcardDatabase.getAllCards();
@@ -134,22 +134,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 100 && resultCode == RESULT_OK) {
-            if (cardptr >= 0){
-            String question = data.getExtras().getString("question");
-            String answer = data.getExtras().getString("answer");
-            questionTextView.setText(question);
-            answerTextView.setText(answer);
-            Flashcard newcard = new Flashcard(question, answer);
-            flashcardDatabase.insertCard(newcard);
-            cardptr++;
-            allFlashcards = flashcardDatabase.getAllCards();
-            }
-            else{
                 String question = data.getExtras().getString("question");
                 String answer = data.getExtras().getString("answer");
                 questionTextView.setText(question);
                 answerTextView.setText(answer);
+                Flashcard newcard = new Flashcard(question, answer);
+                flashcardDatabase.insertCard(newcard);
+                cardptr++;
+                allFlashcards = flashcardDatabase.getAllCards();
             }
+        if (requestCode == 200 && resultCode == RESULT_OK) {
+            String question = data.getExtras().getString("question");
+            String answer = data.getExtras().getString("answer");
+            questionTextView.setText(question);
+            answerTextView.setText(answer);
         }
     }
 

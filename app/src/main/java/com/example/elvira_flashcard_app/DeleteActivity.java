@@ -15,7 +15,7 @@ public class DeleteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_delete);
 
-        ImageView homeBtn = findViewById(R.id.home);
+        ImageView homeBtn = findViewById(R.id.home_button);
         TextView msg = findViewById(R.id.bottomDeckMessage);
 
         homeBtn.setOnClickListener(new View.OnClickListener() {
