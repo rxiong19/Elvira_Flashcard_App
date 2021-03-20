@@ -70,6 +70,7 @@ After we add the second question, you can click the "next" and "last" buttons to
 
 
 ------------Old .GIF-----------Old .GIF---------Old .GIF---------Old .GIF---------Old .GIF---------
+
 For some reason, th e.gif did not show all the things that I would to present.
 Here is the link to see its video version: [please click here 40s - 52s](https://recordit.co/PrbiUBSriF)
 
