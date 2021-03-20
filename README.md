@@ -60,10 +60,17 @@ This is very simple falshcard app. Now we have a funvtion to view multiple cards
 
 ### App Walk-though
 After we add the second question, you can click the "next" and "last" buttons to go back and forth. If you keep clicking next, you will see your first card eventually. But if you keep clicking "last" button, you will stop at the first card. You can also delete the card you don't want. If you delete all the card, then you will be transfered to a new page saying you have deleted all the cards and next time you open the app, the default setting for the question and answer will be appeared.
+# Update with a new /gif for walkthrough
+[Update] Here is the new version for walk through:
+<img src="http://g.recordit.co/9D7APX4SSB.gif" width=200><br>
+
+------------Old .GIF-----------Old .GIF---------Old .GIF---------Old .GIF---------Old .GIF---------
 For some reason, th e.gif did not show all the things that I would to present.
 Here is the link to see its video version: [please click here 40s - 52s](https://recordit.co/PrbiUBSriF)
 
-<img src="http://g.recordit.co/PrbiUBSriF.gif" width=200><br>
+<img src="http://g.recordit.co/PrbiUBSriF.gif" width=200><br> => This was the old .Gif
+
+------------Old .GIF-----------Old .GIF---------Old .GIF---------Old .GIF---------Old .GIF---------
 
 
 ## Required
