@@ -113,6 +113,16 @@
         android:textSize="20dp"
         android:visibility="invisible"/>
 
+    <ImageView
+        android:id="@+id/timerStop"
+        android:layout_width="70dp"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="86dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/timerstop_button_foreground" />
+
 
 </RelativeLayout>
 

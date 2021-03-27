@@ -27,8 +27,10 @@ public class MainActivity extends AppCompatActivity {
     int cardptr = -1;
     CountDownTimer timer;
     ImageView timer_button;
+    ImageView timer_Stop;
     TextView countdown;
     int hit = 0;
+
     private void startTimer(){
         timer.cancel();
         timer.start();
@@ -53,21 +55,25 @@ public class MainActivity extends AppCompatActivity {
 
         timer_button = findViewById(R.id.timer);
         countdown = findViewById(R.id.countdown);
+        timer_Stop = findViewById(R.id.timerStop);
+
         timer_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 hit++;
                 timer_button.setVisibility(View.INVISIBLE);
                 countdown.setVisibility(View.VISIBLE);
+                timer_Stop.setVisibility(View.VISIBLE);
                 startTimer();
             }
         });
 
-        countdown.setOnClickListener(new View.OnClickListener() {
+        timer_Stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 timer_button.setVisibility(View.VISIBLE);
                 countdown.setVisibility(View.INVISIBLE);
+                timer_Stop.setVisibility(View.INVISIBLE);
                 hit--;
             }
         });
