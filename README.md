@@ -89,3 +89,28 @@ Here is the link to see its video version: [please click here 40s - 52s](https:/
 - [ ] Flashcards are shown in random order instead of the order they were created in
 - [ ] User can edit a card and see the edit saved when they browse through their deck of cards
 - [ ] User can create flashcards with multiple answers and be able to browse through cards with multiple choice answers shown
+
+
+
+
+## Lab 4
+
+### App Description
+This is a simple flashcard app that user can store their question and answer. It would be useful for exam reviewing :-)
+
+### App Walk-though
+This time I added some animation between activities and also a timer function. When you click on the timer, it will start to countdowm for 15 seconds. You can click on the grren clock icon to start and the red clock icon to stop. Everytime the user hit the "next" or "last" button, the timer will be reset to 15 seconds and countdown. 
+
+<img src="http://g.recordit.co/2qGWQ5Pc9o.gif" width=200><br>
+
+
+## Required
+- [x] User sees a transition animation when going from the main screen to the add card screen.
+- [x] User sees a reveal animation when the flashcard is tapped and the answer is shown
+- [x] User sees flashcards animating in / out when the 'next' button is tapped
+
+## Optional
+- [x] Extra styling is added!
+- [x] User sees a countdown timer for each question
+- [ ] User sees a 'card flip' animation when the card is tapped
+- [ ] User sees a celebration animation with confetti when they answer a question correctly
